@@ -75,7 +75,7 @@ const Contact = () => {
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn",
-      link: "https://www.linkedin.com/in/michael-olang-830b63214://linkedin.com/in/michael-olang",
+      link: "https://www.linkedin.com/in/michael-olang-830b63214/",
       color: "hover:text-blue-400",
     },
     {
