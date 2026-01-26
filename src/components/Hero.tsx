@@ -13,10 +13,10 @@ const Hero = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   const titles = [
-    "Mobile Application Developer",
+    "Android Engineer",
     "Flutter Expert",
+    "Mobile Application Developer",
     "Fintech Solutions Architect",
-    "Innovation Leader",
   ];
 
   useEffect(() => {

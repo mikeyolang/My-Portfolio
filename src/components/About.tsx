@@ -2,6 +2,16 @@ import { Calendar, MapPin, Briefcase, GraduationCap } from "lucide-react";
 
 const About = () => {
   const timeline = [
+    /* {
+      date: "Dec 2025 - Present",
+      title: "Android Engineer",
+      company: "Helapay Africa",
+      location: "Nairobi, Kenya",
+      type: "current",
+      description:
+        "Developing high-performance cross-platform (Flutter) and native (Java/Kotlin) Android applications, integrating RESTful APIs and Firebase for scalable fintech solutions.",
+      icon: <Briefcase className="w-6 h-6" />,
+    }, */
     {
       date: "Feb 2025 - Present",
       title: "Mobile Application Developer",
@@ -81,10 +91,11 @@ const About = () => {
 
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
                 I'm a dedicated Mobile Application Developer with a passion for
-                creating impactful solutions that make a difference. With
-                expertise in Flutter and modern development practices, I've
-                successfully delivered applications ranging from sports
-                platforms to fintech solutions.
+                creating impactful solutions that make a difference.
+                Specializing in both native Android development with Kotlin and
+                cross-platform solutions using Flutter, I bring versatile
+                expertise to every project, delivering high-performance
+                applications ranging from sports platforms to fintech solutions.
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">

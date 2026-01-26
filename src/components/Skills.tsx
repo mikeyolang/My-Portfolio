@@ -34,23 +34,11 @@ const Skills = () => {
       ],
     },
     {
-      title: "Web Technologies",
-      icon: <Code className="w-8 h-8" />,
-      skills: [
-        { name: "JavaScript", level: 90, icon: "⚡" },
-        { name: "TypeScript", level: 65, icon: "📘" },
-        { name: "React", level: 35, icon: "⚛️" },
-        { name: "HTML/CSS", level: 90, icon: "🎨" },
-      ],
-    },
-    {
       title: "Cloud & DevOps",
       icon: <Cloud className="w-8 h-8" />,
       skills: [
         { name: "Firebase", level: 90, icon: "🔥" },
         { name: "CI/CD", level: 80, icon: "🔄" },
-        { name: "Docker", level: 70, icon: "🐳" },
-        { name: "AWS", level: 65, icon: "☁️" },
       ],
     },
     {
@@ -141,9 +129,8 @@ const Skills = () => {
                         className="h-full bg-gradient-to-r from-[#42A5F5] to-[#0175C2] rounded-full transition-all duration-1000 ease-out"
                         style={{
                           width: isVisible ? `${skill.level}%` : "0%",
-                          transitionDelay: `${
-                            categoryIndex * 200 + skillIndex * 100
-                          }ms`,
+                          transitionDelay: `${categoryIndex * 200 + skillIndex * 100
+                            }ms`,
                         }}
                       />
                     </div>

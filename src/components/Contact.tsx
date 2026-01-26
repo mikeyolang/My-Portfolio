@@ -81,7 +81,7 @@ const Contact = () => {
     {
       icon: <MessageCircle className="w-6 h-6" />,
       label: "WhatsApp",
-      link: "https://wa.me/254768241008",
+      link: "https://wa.me/254747241008",
       color: "hover:text-green-400",
     },
   ];

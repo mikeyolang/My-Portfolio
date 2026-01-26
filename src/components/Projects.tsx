@@ -7,6 +7,51 @@ const Projects = () => {
 
   const projects = [
     {
+      id: 7,
+      title: "Deliva Fasta",
+      description: "Logistics and delivery solution for cereal companies to manage goods distribution to outlets via a dedicated driver network.",
+      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&h=300&fit=crop",
+      category: 'enterprise',
+      tech: ['Flutter', 'Firebase', 'RESTful APIs', 'Google Maps'],
+      features: ['Driver Tracking', 'Inventory Management', 'Delivery Scheduling', 'Outlet Management'],
+      links: {
+        playstore: '#',
+        github: '#'
+      },
+      status: 'Published',
+      metrics: { outlets: '100+', deliveries: '5K+' }
+    },
+    {
+      id: 8,
+      title: "Voltic",
+      description: "Comprehensive transport management system for companies like Ena Coach and Grand Bus to handle parcel logistics and ticket bookings.",
+      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=500&h=300&fit=crop",
+      category: 'enterprise',
+      tech: ['Flutter', 'Java', 'Kotlin', 'Firebase'],
+      features: ['Parcel Handling', 'Ticket Bookings', 'Fleet Management', 'Seat Selection'],
+      links: {
+        playstore: '#',
+        github: '#'
+      },
+      status: 'Maintenance',
+      metrics: { users: '10K+', fleet: '200+' }
+    },
+    {
+      id: 9,
+      title: "Travler App",
+      description: "User-centric mobile application for seamless bus ticket bookings across multiple long-distance transport providers.",
+      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=500&h=300&fit=crop",
+      category: 'mobile',
+      tech: ['Flutter', 'Dart', 'Payment API', 'Firebase'],
+      features: ['Bus Search', 'Online Payment', 'Digital Tickets', 'Trip History'],
+      links: {
+        playstore: '#',
+        github: '#'
+      },
+      status: 'Development',
+      metrics: { downloads: '500+', providers: '10+' }
+    },
+    {
       id: 1,
       title: "Let's Play App",
       description: "Sports platform connecting athletes and enthusiasts with real-time match updates, team management, and social features.",
@@ -106,8 +151,8 @@ const Projects = () => {
     { key: 'ai', label: 'AI/ML' }
   ];
 
-  const filteredProjects = activeFilter === 'all' 
-    ? projects 
+  const filteredProjects = activeFilter === 'all'
+    ? projects
     : projects.filter(project => project.category === activeFilter);
 
   const getStatusColor = (status: string) => {
@@ -139,11 +184,10 @@ const Projects = () => {
             <button
               key={filter.key}
               onClick={() => setActiveFilter(filter.key)}
-              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                activeFilter === filter.key
-                  ? 'bg-gradient-to-r from-[#42A5F5] to-[#0175C2] text-white shadow-lg transform scale-105'
-                  : 'bg-[#1A1A1B]/50 text-gray-400 hover:text-[#42A5F5] hover:bg-[#42A5F5]/10 border border-[#42A5F5]/20'
-              }`}
+              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${activeFilter === filter.key
+                ? 'bg-gradient-to-r from-[#42A5F5] to-[#0175C2] text-white shadow-lg transform scale-105'
+                : 'bg-[#1A1A1B]/50 text-gray-400 hover:text-[#42A5F5] hover:bg-[#42A5F5]/10 border border-[#42A5F5]/20'
+                }`}
             >
               {filter.label}
             </button>
@@ -165,7 +209,7 @@ const Projects = () => {
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0B]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                
+
                 {/* Status Badge */}
                 <div className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-medium border ${getStatusColor(project.status)}`}>
                   {project.status}
@@ -205,7 +249,7 @@ const Projects = () => {
                 <h3 className="text-xl font-semibold mb-3 group-hover:text-[#42A5F5] transition-colors">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-gray-400 mb-4 text-sm leading-relaxed">
                   {project.description}
                 </p>
@@ -245,7 +289,7 @@ const Projects = () => {
                       </div>
                     ))}
                   </div>
-                  
+
                   <div className="flex items-center gap-1 text-yellow-400">
                     <Star size={14} fill="currentColor" />
                     <span className="text-xs">Featured</span>
