@@ -9,7 +9,7 @@ const About = () => {
       location: "Nairobi County, Kenya",
       type: "current",
       description:
-        "Developing and maintaining high-performance cross-platform and native Android applications as part of a collaborative mobile development team. Building scalable, user-friendly solutions across the full development lifecycle, including Flutter/Dart, Java, and Android SDK, while managing deployments to the Google Play Store.",
+        "Developing and maintaining high-performance cross-platform and native Android applications as part of a collaborative mobile development team. Building scalable, user-friendly solutions across the full development lifecycle, including Kotlin, Flutter/Dart, Java, and Android SDK, while managing deployments to the Google Play Store.",
       icon: <Briefcase className="w-6 h-6" />,
     },
     {
