@@ -2,22 +2,22 @@ import { Calendar, MapPin, Briefcase, GraduationCap } from "lucide-react";
 
 const About = () => {
   const timeline = [
-    /* {
+    {
       date: "Dec 2025 - Present",
       title: "Android Engineer",
-      company: "Helapay Africa",
-      location: "Nairobi, Kenya",
+      company: "HelaPay Africa",
+      location: "Nairobi County, Kenya",
       type: "current",
       description:
-        "Developing high-performance cross-platform (Flutter) and native (Java/Kotlin) Android applications, integrating RESTful APIs and Firebase for scalable fintech solutions.",
+        "Developing and maintaining high-performance cross-platform and native Android applications as part of a collaborative mobile development team. Building scalable, user-friendly solutions across the full development lifecycle, including Flutter/Dart, Java, and Android SDK, while managing deployments to the Google Play Store.",
       icon: <Briefcase className="w-6 h-6" />,
-    }, */
+    },
     {
-      date: "Feb 2025 - Present",
+      date: "Feb 2025 - Dec 2025",
       title: "Mobile Application Developer",
       company: "Skylab Systems",
       location: "Nairobi, Kenya",
-      type: "current",
+      type: "work",
       description:
         "Leading mobile app development initiatives and architecting scalable solutions.",
       icon: <Briefcase className="w-6 h-6" />,
@@ -139,11 +139,10 @@ const About = () => {
                 <div key={index} className="relative flex gap-6 pb-8">
                   {/* Timeline Dot */}
                   <div
-                    className={`relative z-10 flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center border-4 ${
-                      item.type === "current"
+                    className={`relative z-10 flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center border-4 ${item.type === "current"
                         ? "bg-[#42A5F5] border-[#42A5F5] text-white"
                         : "bg-[#1A1A1B] border-[#42A5F5]/50 text-[#42A5F5]"
-                    }`}
+                      }`}
                   >
                     {item.icon}
                   </div>
@@ -151,11 +150,10 @@ const About = () => {
                   {/* Content */}
                   <div className="flex-1 pt-2">
                     <div
-                      className={`p-6 rounded-xl border transition-all duration-300 hover:border-[#42A5F5]/50 ${
-                        item.type === "current"
+                      className={`p-6 rounded-xl border transition-all duration-300 hover:border-[#42A5F5]/50 ${item.type === "current"
                           ? "bg-[#42A5F5]/10 border-[#42A5F5]/30"
                           : "bg-[#1A1A1B]/50 border-[#42A5F5]/10"
-                      }`}
+                        }`}
                     >
                       <div className="flex flex-wrap items-center gap-2 mb-2">
                         <span className="text-sm text-[#42A5F5] font-medium">
