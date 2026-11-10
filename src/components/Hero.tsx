@@ -79,7 +79,7 @@ const Hero = () => {
                 onClick={() => {
                   const link = document.createElement("a");
                   link.href =
-                    "https://drive.google.com/file/d/1dAeigzUf9F9tbPi8dBh3pvxZaizAqEtQ/view?usp=drive_link";
+                    "https://drive.google.com/file/d/1E3Vr_iPoZmTIzhvzy9uQacraH3_PAZKg/view?usp=sharing";
                   link.download = "Michael Olang Resume.pdf";
                   document.body.appendChild(link);
                   link.click();
